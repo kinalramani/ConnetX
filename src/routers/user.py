@@ -513,4 +513,4 @@ def following_count(user_id:str):
     followers_count=len(db_user.followers)
 
     logger.success(f"User {user_id} has {followers_count} followers")
-    return {"user_id": user_id, "following_count": followers_count}
+    return {"user_id": user_id, "following_count": followers_count} 

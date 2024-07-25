@@ -6,6 +6,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime,timedelta
+from config import sender_email,password
 
 
 
@@ -29,8 +30,7 @@ def generate_otp(email: str):
     return otp_code
 
 def send_otp_email(email: str, otp_code: str):
-    sender_email = "kinalramani14@gmail.com"
-    password = "irnyitpcqjlebnmv"
+   
     subject = "Your OTP Code"
     message_text = f"Your OTP is {otp_code} which is valid for 5 minutes"
 
